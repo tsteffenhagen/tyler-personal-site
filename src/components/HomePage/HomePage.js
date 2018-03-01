@@ -27,19 +27,19 @@ export default class HomePage extends Component {
     return (
       <div>
 
-        <header className="App-header" style={sectionStyle}>
+   <header>
         </header>
         <Grid className="fluid">
     
-        <div style={{backgroundColor : bgColors.Blue, width: '100%'}}>
-          <Row >
-            <Col md={6}>
-              <h1>Home Page </h1>
-            </Col>
-            <Col md={6}>
+         <div style={{backgroundColor : bgColors.Blue, width: '100%'}}>
+           <Row >
+             <Col md={6}>
+               <h1>Home Page </h1>
+           </Col>
+           <Col md={6}>
               <p>2 of 2</p>
         </Col>
-          </Row>
+           </Row>
           </div>
         </Grid>
         <Footer />

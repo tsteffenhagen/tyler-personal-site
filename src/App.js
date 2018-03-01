@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import './App.css';
 import FA  from 'react-fontawesome';
 import {Button, Navbar, Nav, NavItem} from 'react-bootstrap';
 import Background from './images/home.png'
+
+
+import AboutPage from './components/AboutPage/AboutPage'
+import ResumePage from './components/ResumePage/ResumePage'
+import HomePage from './components/HomePage/HomePage'
 
 var sectionStyle = {
   height: "725px",
@@ -16,6 +21,7 @@ var sectionStyle = {
 class App extends Component {
   render() {
     return (
+      <Router>
       <div className="App">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
         <header className="App-header" style={ sectionStyle }>
@@ -36,7 +42,14 @@ class App extends Component {
           </Nav>
           </Navbar>
         </header>
+
+        <div>
+          <Route exact path='/' component={HomePage} />
+          <Route path='/about' component={AboutPage}/>
+          <Route path='/resume' component={ResumePage}/> 
+        </div>
       </div>
+      </Router>
     );
   }
 }

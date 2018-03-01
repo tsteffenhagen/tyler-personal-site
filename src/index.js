@@ -9,5 +9,5 @@ import FA  from 'react-fontawesome';
 
 
 
-ReactDOM.render(<Routes />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
