@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
 import { Link } from 'react-router-dom';
 import './App.css';
 import FA  from 'react-fontawesome';
 import {Button, Navbar, Nav, NavItem} from 'react-bootstrap';
-import Background from '../images/home.png'
+import Background from './images/home.png'
 
 var sectionStyle = {
   height: "725px",
