@@ -14,12 +14,16 @@ const bgColors = {
 };
 
 var sectionStyle = {
-    height: "725px",
-    backgroundImage: `url(${Background})`,
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center",
-    backgroundSize: "cover"
-  };
+  height: "725px",
+  backgroundImage: `url(${Background})`,
+  backgroundRepeat: "no-repeat",
+  backgroundPosition: "center",
+  backgroundSize: "cover"
+};
+
+var centerSectionStyle = {
+  textAlign: "center"
+};
 
 
 export default class HomePage extends Component {
@@ -27,20 +31,49 @@ export default class HomePage extends Component {
     return (
       <div>
 
-   <header>
+        <header>
         </header>
         <Grid className="fluid">
-    
-         <div style={{backgroundColor : bgColors.Blue, width: '100%'}}>
-           <Row >
-             <Col md={6}>
-               <h1>Home Page </h1>
-           </Col>
-           <Col md={6}>
-              <p>2 of 2</p>
-        </Col>
-           </Row>
-          </div>
+
+          <Row >
+            <Col md={12} style={centerSectionStyle}>
+              <h1> Welcome </h1>
+            </Col>
+          </Row>
+
+          <Row >
+            <Col md={1}>
+            </Col>
+            <Col md={10} style={centerSectionStyle}>
+              <p>Hi my name is Tyler Steffenhagen and welcome to my site. Feel free to click around and
+                explore the site I hope that you find something of interest to you. The site is currently
+                a work in progress and I look forward to adding more features such as a section for my blog
+                and other sites of my own creation as time allows. Feel free to contact me at any of the links below. </p>
+            </Col>
+            <Col md={1}>
+            </Col>
+          </Row>
+
+          <hr />
+
+          <Row >
+            <Col md={12} style={centerSectionStyle}>
+              <h2> Projects / Portfolio </h2>
+            </Col>
+          </Row>
+
+          <Row >
+            <Col md={1}>
+            </Col>
+
+            <Col md={10} style={centerSectionStyle}>
+              <p>Here are some examples of my work. </p>
+            </Col>
+
+            <Col md={1}>
+            </Col>
+          </Row>
+
         </Grid>
         <Footer />
       </div>

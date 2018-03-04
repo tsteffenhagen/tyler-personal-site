@@ -4,8 +4,16 @@ import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
 import Footer from '../Footer/Footer';
 
-var sectionStyle = {
+var rightSectionStyle = {
   textAlign: "right"
+};
+
+var leftSectionStyle = {
+  textAlign: "left"
+};
+
+var centerSectionStyle = {
+  textAlign: "center"
 };
 
 
@@ -13,28 +21,27 @@ export default class ResumePage extends Component {
   render() {
     return (
       <div>
-        <Grid className="fluid">
+        <Grid>
           <Row >
-            <Col md={4}>
-            </Col>
-            <Col md={6}>
+            <Col md={12} style={centerSectionStyle}>
               <h1>Tyler L Steffenhagen</h1>
             </Col>
           </Row>
           <Row>
-            <Col md={5}>
+            <Col md={4} style={centerSectionStyle}>
             <p>steffenhagen.tyler@gmail.com</p>
             </Col>
-            <Col md={4}>
+            <Col md={4} style={centerSectionStyle}>
             <p>(612)-597-1279</p>
             </Col>
-            <Col md={3}>
+            <Col md={4} style={centerSectionStyle}>
             <p>github.com/tsteffenhagen</p>
             </Col>
           </Row>
           <Row>
-            <Col md={4}>
+            <Col md={12} style={leftSectionStyle}>
             <h3>Skills</h3>
+            <hr />
             </Col>
           </Row>
           <Row>
@@ -73,15 +80,17 @@ export default class ResumePage extends Component {
             </Col>
           </Row>
           <Row>
-            <Col md={6}>
+            <Col md={12} style={leftSectionStyle}>
             <h3>Work Experience</h3>
+
+            <hr />
             </Col>
           </Row>
           <Row>
-            <Col md={6}>
+            <Col md={6} style={leftSectionStyle} >
             <h5>Prime Digital Academy</h5>
             </Col>
-            <Col md={6} style={sectionStyle}>
+            <Col md={6} style={rightSectionStyle}>
             <h5>September 2017 - March 2017</h5>
             </Col>
           </Row>
