@@ -9,7 +9,7 @@ import Background from './images/home.png'
 import AboutPage from './components/AboutPage/AboutPage'
 import ResumePage from './components/ResumePage/ResumePage'
 import HomePage from './components/HomePage/HomePage'
-
+import BlogPage from './components/BlogPage/BlogPage'
 var sectionStyle = {
   height: "725px",
   background: `url(${Background})`,
@@ -37,6 +37,8 @@ class App extends Component {
             <Link to="about"><Button bsStyle="link"><h5>About Page</h5></Button></Link>
             {"|"}
             <Link to="resume"><Button bsStyle="link"><h5>Resume</h5></Button></Link>
+            {"|"}
+            <Link to="blog"><Button bsStyle="link"><h5>Blog</h5></Button></Link>
           </div>
           </NavItem>
           </Nav>
@@ -46,7 +48,8 @@ class App extends Component {
         <div>
           <Route exact path='/' component={HomePage} />
           <Route path='/about' component={AboutPage}/>
-          <Route path='/resume' component={ResumePage}/> 
+          <Route path='/resume' component={ResumePage}/>
+          <Route path='/blog' component={BlogPage}/> 
         </div>
       </div>
       </Router>

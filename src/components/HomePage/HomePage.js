@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import FA from 'react-fontawesome';
 import Footer from '../Footer/Footer';
 import { Carousel } from 'react-bootstrap';
-import { Grid, Image } from 'react-bootstrap';
-import { Row } from 'react-bootstrap';
-import { Col } from 'react-bootstrap';
+import { Grid, Image, Row, Col } from 'react-bootstrap';
 import Background from '../../images/home.png';
 import image from '../../images/hustle.png';
 
@@ -46,10 +44,11 @@ export default class HomePage extends Component {
             </Col>
             <Col md={10} style={centerSectionStyle}>
               <p>Hi my name is Tyler Steffenhagen and welcome to my site. Feel free to click around and
-                explore the site I hope that you find something of interest to you. The site is currently
+                explore the site, I hope that you find something of interest to you. The site is currently
                 a work in progress and I look forward to adding more features such as a section for my blog
-                and other sites of my own creation as time allows. Feel free to contact me at any of the links below. </p>
+                and other sites of my own creation as time allows. Please feel free to contact me. </p>
             </Col>
+
             <Col md={1}>
             </Col>
           </Row>
@@ -70,9 +69,8 @@ export default class HomePage extends Component {
               <p>Here are some examples of my work. </p>
             </Col>
 
-            <Col md={1}>
-            </Col>
-          </Row>
+            <Col md={1}></Col>
+          </Row><br />
 
           <Row >
             <Col md={1}>
