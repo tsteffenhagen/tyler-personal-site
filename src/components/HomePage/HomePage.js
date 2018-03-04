@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import FA from 'react-fontawesome';
 import Footer from '../Footer/Footer';
-import image from '../../images/carousel1.png';
-import image2 from '../../images/carousel2.png';
 import { Carousel } from 'react-bootstrap';
-import { Grid } from 'react-bootstrap';
+import { Grid, Image } from 'react-bootstrap';
 import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
 import Background from '../../images/home.png';
+import image from '../../images/hustle.png';
+
 
 const bgColors = {
   "Blue": "#00B1E1"
@@ -70,6 +70,23 @@ export default class HomePage extends Component {
               <p>Here are some examples of my work. </p>
             </Col>
 
+            <Col md={1}>
+            </Col>
+          </Row>
+
+          <Row >
+            <Col md={1}>
+            </Col>
+            <Col md={3} style={centerSectionStyle}>
+            <Image height={180} width={180} src={image}/>
+            </Col>
+            <Col md={7} style={centerSectionStyle}>
+              <h3> Hustle </h3> <br/>
+              <p>Hustle was my group project that I worked on while at Prime Digital Academy. It is a site
+                built around bringing project creators and collaborators so that they may work on their side
+                project "Hustles"
+              </p>
+            </Col>
             <Col md={1}>
             </Col>
           </Row>
