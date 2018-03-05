@@ -4,6 +4,8 @@ import './App.css';
 import FA  from 'react-fontawesome';
 import {Button, Navbar, Nav, NavItem} from 'react-bootstrap';
 import Background from './images/home.png'
+import Footer from './components/Footer/Footer';
+
 
 
 import AboutPage from './components/AboutPage/AboutPage'
@@ -50,8 +52,13 @@ class App extends Component {
           <Route path='/about' component={AboutPage}/>
           <Route path='/resume' component={ResumePage}/>
           <Route path='/blog' component={BlogPage}/> 
-        </div>
+        </div><br/>
+
+        <footer>
+        <Footer />
+        </footer>
       </div>
+
       </Router>
     );
   }

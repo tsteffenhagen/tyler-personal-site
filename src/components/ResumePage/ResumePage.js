@@ -96,7 +96,6 @@ export default class ResumePage extends Component {
           </Row>
 
         </Grid>
-        <Footer />
       </div>
     )
   }

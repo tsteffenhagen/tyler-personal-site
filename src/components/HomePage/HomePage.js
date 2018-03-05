@@ -90,7 +90,6 @@ export default class HomePage extends Component {
           </Row>
 
         </Grid>
-        <Footer />
       </div>
     )
   }
