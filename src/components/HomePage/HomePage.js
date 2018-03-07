@@ -76,7 +76,9 @@ export default class HomePage extends Component {
             <Col md={1}>
             </Col>
             <Col md={3} style={centerSectionStyle}>
+            <a href="http://createyourhustle.herokuapp.com/#/home">
             <Image height={180} width={180} src={image}/>
+            </a>
             </Col>
             <Col md={7} style={centerSectionStyle}>
               <h3> Hustle </h3> <br/>
